@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAHARA HAIRSTYLIST · Leicester</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <button class="icon-btn" id="menuBtn" aria-label="Open Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+
+    <div class="brand-logo">
+      <h1>Sahara</h1>
+      <span>Hairstylist</span>
+    </div>
+
+    <div class="nav-icons">
+      <button class="icon-btn" aria-label="Search">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="11" cy="11" r="8"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+      </button>
+
+      <button class="icon-btn" id="cartBtn" aria-label="Shopping Bag">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4H6z"/>
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <path d="M16 10a4 4 0 01-8 0"/>
+        </svg>
+        <span class="cart-badge" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- HERO SECTION -->
+    <section class="hero-layout">
+      <div>
+        <span class="eyebrow">Haircare · Leicester</span>
+        <h1 class="hero-title">Good hair,<br><em>good feeling.</em></h1>
+        <p class="body-text">
+          Thoughtful hair care, beautiful everyday essentials, and a place to feel like yourself.
+        </p>
+      </div>
+
+      <div class="dark-card">
+        <div>
+          <span class="eyebrow">The Sahara Edit</span>
+          <h2>Care that stays with you.</h2>
+        </div>
+        <div class="dark-card-img"></div>
+      </div>
+    </section>
+
+    <!-- SECTION 01 -->
+    <section class="section-spacer">
+      <span class="eyebrow">01 / Welcome</span>
+      <h2 class="section-title">More than a haircut.<br><em>A moment for you.</em></h2>
+      <p class="body-text">
+        At Sahara Hairstylist, we believe great hair begins with feeling good. Come in for a refresh, find your next favourite ritual, and leave a little lighter.
+      </p>
+      <a href="#services" class="link-arrow">Discover our services ↗</a>
+    </section>
+
+    <hr class="divider">
+
+    <!-- PRODUCTS SECTION -->
+    <section class="section-spacer">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 16px;">
+        <div>
+          <span class="eyebrow">The Edit / 01</span>
+          <h2 class="section-title" style="margin-bottom: 0;">For good hair days.</h2>
+        </div>
+        <a href="#" class="link-arrow">View all products ↗</a>
+      </div>
+
+      <p class="body-text" style="margin-top: 16px;">
+        A preview of our future collection. Products and prices shown are examples until our range is confirmed.
+      </p>
+
+      <div class="product-grid">
+        
+        <div class="product-card">
+          <div class="product-img-wrapper">
+            <span class="product-num">01 / 04</span>
+            <img src="https://images.unsplash.com/photo-1628128498877-dcecc63ff755?auto=format&fit=crop&w=600&q=80" alt="The Daily Wash" />
+            <button class="add-btn-corner" onclick="addToCart('The Daily Wash')">+</button>
+          </div>
+          <div class="product-meta-top">
+            <span class="product-category">Cleanse</span>
+            <span class="product-tag">Example Price</span>
+          </div>
+          <h3 class="product-title">The Daily Wash</h3>
+          <div class="product-price">£18.00</div>
+          <p class="product-desc">A gentle reset for everyday hair.</p>
+          <button class="link-arrow" onclick="addToCart('The Daily Wash')">Quick add ↗</button>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrapper">
+            <span class="product-num">02 / 04</span>
+            <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=600&q=80" alt="Nourishing Hair Oil" />
+            <button class="add-btn-corner" onclick="addToCart('Nourishing Hair Oil')">+</button>
+          </div>
+          <div class="product-meta-top">
+            <span class="product-category">Nourish</span>
+            <span class="product-tag">Example Price</span>
+          </div>
+          <h3 class="product-title">Nourishing Hair Oil</h3>
+          <div class="product-price">£22.00</div>
+          <p class="product-desc">A little shine, a lot of nourishment.</p>
+          <button class="link-arrow" onclick="addToCart('Nourishing Hair Oil')">Quick add ↗</button>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrapper">
+            <span class="product-num">03 / 04</span>
+            <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=600&q=80" alt="Softening Shampoo" />
+            <button class="add-btn-corner" onclick="addToCart('Softening Shampoo')">+</button>
+          </div>
+          <div class="product-meta-top">
+            <span class="product-category">Cleanse</span>
+            <span class="product-tag">Example Price</span>
+          </div>
+          <h3 class="product-title">Softening Shampoo</h3>
+          <div class="product-price">£16.00</div>
+          <p class="product-desc">A softer start to wash day.</p>
+          <button class="link-arrow" onclick="addToCart('Softening Shampoo')">Quick add ↗</button>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrapper">
+            <span class="product-num">04 / 04</span>
+            <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=600&q=80" alt="Restorative Hair Mask" />
+            <button class="add-btn-corner" onclick="addToCart('Restorative Hair Mask')">+</button>
+          </div>
+          <div class="product-meta-top">
+            <span class="product-category">Treat</span>
+            <span class="product-tag">Example Price</span>
+          </div>
+          <h3 class="product-title">Restorative Hair Mask</h3>
+          <div class="product-price">£24.00</div>
+          <p class="product-desc">A moment to replenish.</p>
+          <button class="link-arrow" onclick="addToCart('Restorative Hair Mask')">Quick add ↗</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section-spacer" id="services">
+      <div class="image-banner">
+        <img src="https://images.unsplash.com/photo-1473580044384-7ba9967e16a0?auto=format&fit=crop&w=1600&q=80" alt="Desert dunes aesthetic" />
+        <span class="image-banner-overlay">The beauty of taking time</span>
+      </div>
+
+      <span class="eyebrow">In the chair / 02</span>
+      <h2 class="section-title">Your hair.<br><em>Your way.</em></h2>
+      <p class="body-text">
+        From a fresh cut to a little extra care, our services are about making room for the version of you that feels best.
+      </p>
+
+      <div class="services-list">
+        <div class="service-item">
+          <div class="service-info"><span class="service-num">01</span><span class="service-name">Cut & finish</span></div>
+          <span>→</span>
+        </div>
+        <div class="service-item">
+          <div class="service-info"><span class="service-num">02</span><span class="service-name">Wash & blow dry</span></div>
+          <span>→</span>
+        </div>
+        <div class="service-item">
+          <div class="service-info"><span class="service-num">03</span><span class="service-name">Hair treatments</span></div>
+          <span>→</span>
+        </div>
+      </div>
+      <a href="#" class="btn-dark">Explore services ↗</a>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="section-spacer">
+      <h2 class="section-title">Good things<br><em>get shared.</em></h2>
+      
+      <div class="stars">
+        <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+        <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+        <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+        <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+        <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+      </div>
+
+      <div class="rating-number">4.9<span>/5</span></div>
+      <p class="body-text">Based on 59 Google reviews</p>
+      <a href="#" class="link-arrow">Read reviews on Google ↗</a>
+    </section>
+    
+    <hr class="divider">
+
+    <!-- LOCATION -->
+    <section class="section-spacer" style="padding-bottom: 0;">
+      <span class="eyebrow">Come find us / 04</span>
+      <h2 class="section-title">A little place<br><em>for good hair.</em></h2>
+      <p class="body-text" style="color: var(--text-dark);">Harewood St, Leicester LE5 3LX</p>
+
+      <div style="display: flex; gap: 24px; align-items: center; flex-wrap: wrap; margin-bottom: 60px;">
+        <a href="#" class="btn-dark">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+          </svg>
+          Get directions
+        </a>
+        <a href="tel:07877988431" class="link-arrow">Call 07877 988431 ↗</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- WIDE FOOTER BANNER -->
+  <div class="footer-banner">
+    <img src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1600&q=80" alt="Sahara Desert Leicester" />
+    <span style="position: absolute; bottom: 32px; left: 5%; color: white; font-size: 12px; letter-spacing: 0.25em; text-transform: uppercase; font-weight: 500;">
+      Sahara · Leicester
+    </span>
+  </div>
+
+  <!-- OVERLAYS & DRAWERS -->
+  <div class="drawer-overlay" id="overlay"></div>
+
+  <!-- MENU DRAWER (Slides from Left) -->
+  <div class="drawer left" id="menuDrawer">
+    <div>
+      <div class="drawer-header">
+        <span class="eyebrow" style="margin:0;">Menu</span>
+        <button class="icon-btn" id="closeMenu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 32px; margin-top: 40px;">
+        <a href="#" class="section-title" style="font-size: 36px; margin:0;">Home</a>
+        <a href="#services" class="section-title" style="font-size: 36px; margin:0;">Services</a>
+        <a href="#" class="section-title" style="font-size: 36px; margin:0;">Products</a>
+        <a href="#" class="section-title" style="font-size: 36px; margin:0;">Reviews</a>
+        <a href="#" class="section-title" style="font-size: 36px; margin:0;">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CART DRAWER (Slides from Right) -->
+  <div class="drawer right" id="cartDrawer">
+    <div>
+      <div class="drawer-header">
+        <span class="eyebrow" style="margin:0;">Your Bag (<span id="cartCountTitle">0</span>)</span>
+        <button class="icon-btn" id="closeCart">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div id="cartItems" style="margin-top: 32px;">
+        <p class="body-text">Your bag is currently empty.</p>
+      </div>
+    </div>
+    <button class="btn-dark" style="width: 100%; text-align: center;" onclick="alert('Proceeding to Checkout!')">
+      Checkout
+    </button>
+  </div>
+
+  <div class="toast" id="toast">Added to bag</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
